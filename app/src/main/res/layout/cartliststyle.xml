@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:padding="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/cartproducttitle"
+                android:layout_marginRight="10dp"
+                android:text="Title"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cartdesc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/cartitem"
+                android:layout_marginRight="10dp"
+                android:text="Items"
+                android:textSize="13sp"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cartproducttitle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/cartdesc"
+                android:layout_marginRight="10dp"
+                android:text="Price"
+                android:textSize="13sp"/>
+
+
+
+            <ImageButton
+                android:id="@+id/deleteitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cartdesc"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/deleteitem"
+                tools:ignore="ContentDescription" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+

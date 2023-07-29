@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/deleteitem"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/payitem"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginEnd="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="Name"
+                    android:textColor="#FF6813"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/t44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-17dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Name"
+                    android:textColor="#020000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="Date"
+                    android:textColor="#FF6813"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/t55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-17dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Date"
+                    android:textColor="#020000"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/totalprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="68dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="TotalPrice"
+                    android:textColor="#FF6813"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/t5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-17dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="TotalPrice"
+                    android:textColor="#020000"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="Items"
+                    android:textColor="#FF6813"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-17dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Purchased Items"
+                    android:textColor="#020000"
+                    android:textSize="12sp" />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/nested_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:padding="4dp"
+            />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

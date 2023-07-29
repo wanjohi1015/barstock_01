@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="4dp"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="120dp"
+            android:text="Name"
+            android:textColor="#FF6813"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/t44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-17dp"
+            android:layout_marginEnd="10dp"
+            android:text="Name:"
+            android:textColor="#020000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/bprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="120dp"
+            android:text="Category:"
+            android:textColor="#FF6813"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/t55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-17dp"
+            android:layout_marginEnd="10dp"
+            android:text="Category:"
+            android:textColor="#020000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/bat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:text="boughtat"
+            android:textColor="#FF6813"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-17dp"
+            android:layout_marginEnd="10dp"
+            android:text="Bought At:"
+            android:textColor="#020000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/fat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="140dp"
+            android:text="Currently on Sale"
+            android:textColor="#FF6813"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/trf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-17dp"
+            android:layout_marginEnd="10dp"
+            android:text="Finished At:"
+            android:textColor="#020000"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/salesrepo"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="-90dp"
+            android:textSize="10sp"
+            android:backgroundTint="#FF6813"
+            android:text="@string/show" />
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/register_bk_color"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    tools:context=".CartActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/As_Ordered"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        style="@style/loginButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:prompt="@string/prompt"
+                        android:spinnerMode="dropdown" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/price"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editname"
+                            style="@style/modifiedEditText"
+                            android:hint="@string/info"
+                            android:textColor="@color/black"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            tools:ignore="Autofill" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/cirRegisterButton"
+                        style="@style/loginButton"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:text="@string/pending" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="2dp"
+                android:adjustViewBounds="false"
+
+                android:src="@drawable/ic_back_img"
+                tools:ignore="ContentDescription,UsingOnClickInXml" />
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

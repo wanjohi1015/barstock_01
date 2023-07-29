@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ReportActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignTop="@+id/report"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#FF6813">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/repobar"
+            android:textStyle="normal|bold"
+            android:textSize="25sp"
+            android:layout_marginEnd="60dp"
+            android:textColor="#FF6813"
+
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_minimal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="  From" />
+
+                <Button
+                    android:id="@+id/btn_minimal"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:backgroundTint="#0D98BA"
+                    android:text="Date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_maximal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="     To" />
+
+                <Button
+                    android:id="@+id/btn_maximal"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:backgroundTint="#0D98BA"
+                    android:text="Date" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/showreport"
+            style="@style/loginButton"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Show Dates' Reports"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:id="@+id/btn_cancel"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="-30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_x"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/salescol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:text="Sales Section"
+        android:textColor="#FF6813"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/report"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/salesvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:text="Total Period Sales:"
+        android:textColor="@color/darkTextColor"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/salescol"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/sales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/salescol"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:textColor="#FF6813"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/profit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/salesvalue"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:textColor="#FF6813"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/profitnu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="4dp"
+        android:text="Profit:"
+        android:textColor="@color/darkTextColor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salesvalue"
+        tools:layout_editor_absoluteX="273dp" />
+
+    <TextView
+        android:id="@+id/items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/profitnu"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#FF6813"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/itemsnu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="4dp"
+        android:text="For Items:"
+        android:textColor="@color/darkTextColor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profitnu"
+        tools:layout_editor_absoluteX="273dp" />
+    <TextView
+        android:id="@+id/wkeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/itemsnu"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#FF6813"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/wkegbeer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="4dp"
+        android:text="Kegs Sales:"
+        android:textColor="@color/darkTextColor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemsnu"
+        tools:layout_editor_absoluteX="273dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

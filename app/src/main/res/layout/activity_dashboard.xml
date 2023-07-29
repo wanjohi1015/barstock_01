@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        android:backgroundTint="#F7EFF9"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="#FFFFFF"
+            android:minHeight="?attr/actionBarSize"
+            android:titleTextColor="#FF6813">
+
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_log_out"
+                android:contentDescription="TODO" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+        <TextView
+            android:id="@+id/firebasename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Welcome,"
+            android:textColor="	#FF6813"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_weight="8"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:padding="0dp"
+            android:rowCount="2"
+            tools:ignore="InefficientWeight">
+
+            <!-- Row 1 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/addItems"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                card_view:cardElevation="0dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_14sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/addlogo"/>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="	#FF6813"
+                        android:layout_gravity="center"
+                        android:text="Add Product"
+                        android:textSize="@dimen/_13sdp"/>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sellItems"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                card_view:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="@dimen/_14sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/cartlogo" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="	#FF6813"
+                        android:text="Manage Products"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/_13sdp"
+                        />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Row 2 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewInventory"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                card_view:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="@dimen/_14sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/billlistlogo"/>
+
+                    <TextView
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:text="Bill Lists"
+                        android:textColor="	#FF6813"
+                        android:textSize="@dimen/_13sdp"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/keg"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_marginStart="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                card_view:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="@dimen/_14sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/keglogo"
+
+                         />
+
+                    <TextView
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="	#FF6813"
+                        android:layout_gravity="center"
+                        android:text=" Keg Beer"
+                        android:textSize="@dimen/_13sdp"/>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/deleteItems"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                card_view:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="@dimen/_14sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        app:srcCompat="@drawable/repologo"
+                        />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:text="View Reports"
+                        android:textColor="	#FF6813"
+                        android:textSize="@dimen/_13sdp"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewexpenses"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_marginStart="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                card_view:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="@dimen/_14sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/expenselogo"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="	#FF6813"
+                        android:layout_gravity="center"
+                        android:text=" Expenses"
+                        android:textSize="@dimen/_13sdp"/>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Row 2 -->
+
+            <!-- Column 1 -->
+
+            <!-- Column 2 -->
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "968787632842",
+    "project_id": "profile-2c837",
+    "storage_bucket": "profile-2c837.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968787632842:android:a1afe6586bb61def7aca33",
+        "android_client_info": {
+          "package_name": "com.blueprint211.poslegendz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968787632842-bn4c1ia5e9n3nfuihl7e9q0hn728meom.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh-e6EB6lvepaUA2G8dgcXtN3iF3HnEAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968787632842-bn4c1ia5e9n3nfuihl7e9q0hn728meom.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
